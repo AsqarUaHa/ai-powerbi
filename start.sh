@@ -2,7 +2,6 @@
 set -e
 
 cd backend
-pip install -r requirements.txt
 
-# Запуск сервера (подставь свой модуль и app при необходимости)
+# Только запуск приложения, БЕЗ pip install
 uvicorn main:app --host 0.0.0.0 --port 8000
