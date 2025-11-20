@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-from .api.v1 import router as api_v1_router
+from backend.api.v1 import router as api_v1_router
 from .api.v1.routes_health import router as health_router
 from .db.base import Base
 from .db.session import engine
