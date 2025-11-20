@@ -3,5 +3,5 @@ set -e
 
 cd backend
 
-# Только запуск приложения, БЕЗ pip install
-uvicorn main:app --host 0.0.0.0 --port 8000
+# Railway обычно даёт порт через переменную PORT
+uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
