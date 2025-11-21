@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 
-from ...schemas.info import ServiceInfoResponse
+from schemas.info import ServiceInfoResponse
 
 router = APIRouter()
 
